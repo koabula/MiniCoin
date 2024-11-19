@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2120" height="950" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="20" width="400" height="150" fill="none" stroke="black"/>
+<text x="20" y="50" font-size="16">Block Index: 0</text>
+<text x="20" y="75" font-size="16">Timestamp: 1731764022.5738084</text>
+<text x="20" y="100" font-size="16">Previous Hash: 0...</text>
+<text x="20" y="125" font-size="16">Block Hash: 619886b82e...</text>
+<text x="20" y="150" font-size="16">Merkle Root: 89eb0ac031...</text>
+<line x1="400" y1="95.0" x2="600" y2="95.0" stroke="black" stroke-width="2"/>
+<polygon points="580,85.0 600,95.0 580,105.0" fill="black"/>
+<rect x="102.5" y="190" width="195" height="50" fill="none" stroke="black"/>
+<text x="200.0" y="210" text-anchor="middle">Data: Genesis Block</text>
+<text x="200.0" y="230" text-anchor="middle">Hash: 89eb0a...</text>
+<rect x="600" y="20" width="400" height="150" fill="none" stroke="black"/>
+<text x="620" y="50" font-size="16">Block Index: 1</text>
+<text x="620" y="75" font-size="16">Timestamp: 1731764023.5751467</text>
+<text x="620" y="100" font-size="16">Previous Hash: 619886b82e...</text>
+<text x="620" y="125" font-size="16">Block Hash: 63620b847f...</text>
+<text x="620" y="150" font-size="16">Merkle Root: 047e62a697...</text>
+<line x1="1000" y1="95.0" x2="1360" y2="95.0" stroke="black" stroke-width="2"/>
+<polygon points="1340,85.0 1360,95.0 1340,105.0" fill="black"/>
+<rect x="740.0" y="190" width="120" height="50" fill="none" stroke="black"/>
+<text x="800.0" y="220" text-anchor="middle">Hash: 047e62...</text>
+<line x1="800.0" y1="240" x2="600.0" y2="310" stroke="black"/>
+<rect x="540.0" y="310" width="120" height="50" fill="none" stroke="black"/>
+<text x="600.0" y="340" text-anchor="middle">Hash: 7a83e3...</text>
+<line x1="600.0" y1="360" x2="500.0" y2="430" stroke="black"/>
+<rect x="417.5" y="430" width="165" height="50" fill="none" stroke="black"/>
+<text x="500.0" y="450" text-anchor="middle">Data: First Block</text>
+<text x="500.0" y="470" text-anchor="middle">Hash: 541963...</text>
+<line x1="600.0" y1="360" x2="700.0" y2="430" stroke="black"/>
+<rect x="617.5" y="430" width="165" height="50" fill="none" stroke="black"/>
+<text x="700.0" y="450" text-anchor="middle">Data: hello world</text>
+<text x="700.0" y="470" text-anchor="middle">Hash: b94d27...</text>
+<line x1="800.0" y1="240" x2="1000.0" y2="310" stroke="black"/>
+<rect x="940.0" y="310" width="120" height="50" fill="none" stroke="black"/>
+<text x="1000.0" y="340" text-anchor="middle">Hash: abb405...</text>
+<line x1="1000.0" y1="360" x2="900.0" y2="430" stroke="black"/>
+<rect x="840.0" y="430" width="120" height="50" fill="none" stroke="black"/>
+<text x="900.0" y="450" text-anchor="middle">Data: yes</text>
+<text x="900.0" y="470" text-anchor="middle">Hash: 8a7988...</text>
+<line x1="1000.0" y1="360" x2="1100.0" y2="430" stroke="black"/>
+<rect x="1040.0" y="430" width="120" height="50" fill="none" stroke="black"/>
+<text x="1100.0" y="450" text-anchor="middle">Data: yes</text>
+<text x="1100.0" y="470" text-anchor="middle">Hash: 8a7988...</text>
+<rect x="1360" y="20" width="400" height="150" fill="none" stroke="black"/>
+<text x="1380" y="50" font-size="16">Block Index: 2</text>
+<text x="1380" y="75" font-size="16">Timestamp: 1731764024.5754797</text>
+<text x="1380" y="100" font-size="16">Previous Hash: 63620b847f...</text>
+<text x="1380" y="125" font-size="16">Block Hash: c5f190d117...</text>
+<text x="1380" y="150" font-size="16">Merkle Root: 2d00f3aef4...</text>
+<rect x="1500.0" y="190" width="120" height="50" fill="none" stroke="black"/>
+<text x="1560.0" y="220" text-anchor="middle">Hash: 2d00f3...</text>
+<line x1="1560.0" y1="240" x2="1360.0" y2="310" stroke="black"/>
+<rect x="1300.0" y="310" width="120" height="50" fill="none" stroke="black"/>
+<text x="1360.0" y="340" text-anchor="middle">Hash: f2d1b3...</text>
+<line x1="1360.0" y1="360" x2="1260.0" y2="430" stroke="black"/>
+<rect x="1170.0" y="430" width="180" height="50" fill="none" stroke="black"/>
+<text x="1260.0" y="450" text-anchor="middle">Data: Second Block</text>
+<text x="1260.0" y="470" text-anchor="middle">Hash: 50c999...</text>
+<line x1="1360.0" y1="360" x2="1460.0" y2="430" stroke="black"/>
+<rect x="1385.0" y="430" width="150" height="50" fill="none" stroke="black"/>
+<text x="1460.0" y="450" text-anchor="middle">Data: BlockChain</text>
+<text x="1460.0" y="470" text-anchor="middle">Hash: 3a6fed...</text>
+<line x1="1560.0" y1="240" x2="1760.0" y2="310" stroke="black"/>
+<rect x="1700.0" y="310" width="120" height="50" fill="none" stroke="black"/>
+<text x="1760.0" y="340" text-anchor="middle">Hash: 02b9c5...</text>
+<line x1="1760.0" y1="360" x2="1660.0" y2="430" stroke="black"/>
+<rect x="1570.0" y="430" width="180" height="50" fill="none" stroke="black"/>
+<text x="1660.0" y="450" text-anchor="middle">Data: I like money</text>
+<text x="1660.0" y="470" text-anchor="middle">Hash: 13b391...</text>
+<line x1="1760.0" y1="360" x2="1860.0" y2="430" stroke="black"/>
+<rect x="1770.0" y="430" width="180" height="50" fill="none" stroke="black"/>
+<text x="1860.0" y="450" text-anchor="middle">Data: I like money</text>
+<text x="1860.0" y="470" text-anchor="middle">Hash: 13b391...</text>
+</svg>

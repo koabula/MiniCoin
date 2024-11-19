@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3800" height="950" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="20" width="400" height="150" fill="none" stroke="black"/>
+<text x="20" y="50" font-size="16">Block Index: 0</text>
+<text x="20" y="75" font-size="16">Timestamp: 0</text>
+<text x="20" y="100" font-size="16">Previous Hash: 0...</text>
+<text x="20" y="125" font-size="16">Block Hash: f9ec3cec93...</text>
+<text x="20" y="150" font-size="16">Merkle Root: 89eb0ac031...</text>
+<line x1="400" y1="95.0" x2="600" y2="95.0" stroke="black" stroke-width="2"/>
+<polygon points="580,85.0 600,95.0 580,105.0" fill="black"/>
+<rect x="102.5" y="190" width="195" height="50" fill="none" stroke="black"/>
+<text x="200.0" y="210" text-anchor="middle">Data: Genesis Block</text>
+<text x="200.0" y="230" text-anchor="middle">Hash: 89eb0a...</text>
+<rect x="600" y="20" width="400" height="150" fill="none" stroke="black"/>
+<text x="620" y="50" font-size="16">Block Index: 1</text>
+<text x="620" y="75" font-size="16">Timestamp: 1731993640.5875323</text>
+<text x="620" y="100" font-size="16">Previous Hash: f9ec3cec93...</text>
+<text x="620" y="125" font-size="16">Block Hash: 00000e7236...</text>
+<text x="620" y="150" font-size="16">Merkle Root: 6fe6eccdd6...</text>
+<line x1="1000" y1="95.0" x2="1200" y2="95.0" stroke="black" stroke-width="2"/>
+<polygon points="1180,85.0 1200,95.0 1180,105.0" fill="black"/>
+<rect x="650.0" y="190" width="300" height="50" fill="none" stroke="black"/>
+<text x="800.0" y="210" text-anchor="middle">Data: Created by 127.0.0.1</text>
+<text x="800.0" y="230" text-anchor="middle">Hash: 6fe6ec...</text>
+<rect x="1200" y="20" width="400" height="150" fill="none" stroke="black"/>
+<text x="1220" y="50" font-size="16">Block Index: 2</text>
+<text x="1220" y="75" font-size="16">Timestamp: 1731993645.3959973</text>
+<text x="1220" y="100" font-size="16">Previous Hash: 00000e7236...</text>
+<text x="1220" y="125" font-size="16">Block Hash: 0000077c4a...</text>
+<text x="1220" y="150" font-size="16">Merkle Root: 808e55f238...</text>
+<line x1="1600" y1="95.0" x2="1840" y2="95.0" stroke="black" stroke-width="2"/>
+<polygon points="1820,85.0 1840,95.0 1820,105.0" fill="black"/>
+<rect x="1340.0" y="190" width="120" height="50" fill="none" stroke="black"/>
+<text x="1400.0" y="220" text-anchor="middle">Hash: 808e55...</text>
+<line x1="1400.0" y1="240" x2="1200.0" y2="310" stroke="black"/>
+<rect x="1050.0" y="310" width="300" height="50" fill="none" stroke="black"/>
+<text x="1200.0" y="330" text-anchor="middle">Data: Created by 127.0.0.1</text>
+<text x="1200.0" y="350" text-anchor="middle">Hash: 6fe6ec...</text>
+<line x1="1400.0" y1="240" x2="1600.0" y2="310" stroke="black"/>
+<rect x="1540.0" y="310" width="120" height="50" fill="none" stroke="black"/>
+<text x="1600.0" y="330" text-anchor="middle">Data: hi</text>
+<text x="1600.0" y="350" text-anchor="middle">Hash: 8f4343...</text>
+<rect x="1840" y="20" width="400" height="150" fill="none" stroke="black"/>
+<text x="1860" y="50" font-size="16">Block Index: 3</text>
+<text x="1860" y="75" font-size="16">Timestamp: 1731993647.1281538</text>
+<text x="1860" y="100" font-size="16">Previous Hash: 0000077c4a...</text>
+<text x="1860" y="125" font-size="16">Block Hash: 00000c13dc...</text>
+<text x="1860" y="150" font-size="16">Merkle Root: 6fe6eccdd6...</text>
+<line x1="2240" y1="95.0" x2="2440" y2="95.0" stroke="black" stroke-width="2"/>
+<polygon points="2420,85.0 2440,95.0 2420,105.0" fill="black"/>
+<rect x="1890.0" y="190" width="300" height="50" fill="none" stroke="black"/>
+<text x="2040.0" y="210" text-anchor="middle">Data: Created by 127.0.0.1</text>
+<text x="2040.0" y="230" text-anchor="middle">Hash: 6fe6ec...</text>
+<rect x="2440" y="20" width="400" height="150" fill="none" stroke="black"/>
+<text x="2460" y="50" font-size="16">Block Index: 4</text>
+<text x="2460" y="75" font-size="16">Timestamp: 1731993647.0642626</text>
+<text x="2460" y="100" font-size="16">Previous Hash: 00000c13dc...</text>
+<text x="2460" y="125" font-size="16">Block Hash: 0000050033...</text>
+<text x="2460" y="150" font-size="16">Merkle Root: c9e09edb71...</text>
+<line x1="2840" y1="95.0" x2="3040" y2="95.0" stroke="black" stroke-width="2"/>
+<polygon points="3020,85.0 3040,95.0 3020,105.0" fill="black"/>
+<rect x="2490.0" y="190" width="300" height="50" fill="none" stroke="black"/>
+<text x="2640.0" y="210" text-anchor="middle">Data: Created by 127.0.0.2</text>
+<text x="2640.0" y="230" text-anchor="middle">Hash: c9e09e...</text>
+<rect x="3040" y="20" width="400" height="150" fill="none" stroke="black"/>
+<text x="3060" y="50" font-size="16">Block Index: 5</text>
+<text x="3060" y="75" font-size="16">Timestamp: 1731993654.3619676</text>
+<text x="3060" y="100" font-size="16">Previous Hash: 0000050033...</text>
+<text x="3060" y="125" font-size="16">Block Hash: 0000065545...</text>
+<text x="3060" y="150" font-size="16">Merkle Root: 55c9586f37...</text>
+<rect x="3180.0" y="190" width="120" height="50" fill="none" stroke="black"/>
+<text x="3240.0" y="220" text-anchor="middle">Hash: 55c958...</text>
+<line x1="3240.0" y1="240" x2="3040.0" y2="310" stroke="black"/>
+<rect x="2980.0" y="310" width="120" height="50" fill="none" stroke="black"/>
+<text x="3040.0" y="340" text-anchor="middle">Hash: 14094e...</text>
+<line x1="3040.0" y1="360" x2="2940.0" y2="430" stroke="black"/>
+<rect x="2790.0" y="430" width="300" height="50" fill="none" stroke="black"/>
+<text x="2940.0" y="450" text-anchor="middle">Data: Created by 127.0.0.2</text>
+<text x="2940.0" y="470" text-anchor="middle">Hash: c9e09e...</text>
+<line x1="3040.0" y1="360" x2="3140.0" y2="430" stroke="black"/>
+<rect x="3080.0" y="430" width="120" height="50" fill="none" stroke="black"/>
+<text x="3140.0" y="450" text-anchor="middle">Data: haha</text>
+<text x="3140.0" y="470" text-anchor="middle">Hash: 090b23...</text>
+<line x1="3240.0" y1="240" x2="3440.0" y2="310" stroke="black"/>
+<rect x="3380.0" y="310" width="120" height="50" fill="none" stroke="black"/>
+<text x="3440.0" y="340" text-anchor="middle">Hash: df3ae3...</text>
+<line x1="3440.0" y1="360" x2="3340.0" y2="430" stroke="black"/>
+<rect x="3280.0" y="430" width="120" height="50" fill="none" stroke="black"/>
+<text x="3340.0" y="450" text-anchor="middle">Data: hi</text>
+<text x="3340.0" y="470" text-anchor="middle">Hash: 8f4343...</text>
+<line x1="3440.0" y1="360" x2="3540.0" y2="430" stroke="black"/>
+<rect x="3480.0" y="430" width="120" height="50" fill="none" stroke="black"/>
+<text x="3540.0" y="450" text-anchor="middle">Data: test</text>
+<text x="3540.0" y="470" text-anchor="middle">Hash: 9f86d0...</text>
+</svg>
