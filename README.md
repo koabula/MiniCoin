@@ -18,7 +18,7 @@
 
 > 目录
 
-0. [引子]
+0. [引子](./Tutor/0_intro.md)
 1. [一个最简单的区块链](./Tutor/1_simple_blockchain.md)
 2. [Merkle树](./Tutor/2_Merkle_Tree.md) 
 3. [P2P网络](./Tutor/3_p2p_network.md)
