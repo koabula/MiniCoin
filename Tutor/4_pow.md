@@ -76,7 +76,7 @@ class BlockChain:
 ```
 
 4. 下面我们进行测试，通过终端输入信息广播给网络，然后画出前5个区块，查看效果如下，可以看到节点成功上传了数据并进行了挖矿
-![alt text](image.png)
+![alt text](../pic/image_4.png)
 
 ![blc](../pic/blockchain_2.svg)
 

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="black"/>
+
+<!-- 区块链示意图，下移到700位置 -->
+<g transform="translate(200,700)">
+    <!-- 第一个区块 -->
+    <rect x="0" y="0" width="300" height="80" rx="10" fill="none" stroke="white" stroke-width="2"/>
+    
+    <!-- 区块间连接线 -->
+    <line x1="300" y1="40" x2="400" y2="40" stroke="white" stroke-width="2"/>
+    
+    <!-- 第二个区块 -->
+    <rect x="400" y="0" width="300" height="80" rx="10" fill="none" stroke="white" stroke-width="2"/>
+    
+    <!-- 区块间连接线 -->
+    <line x1="700" y1="40" x2="800" y2="40" stroke="white" stroke-width="2"/>
+    
+    <!-- 第三个区块 -->
+    <rect x="800" y="0" width="300" height="80" rx="10" fill="none" stroke="white" stroke-width="2"/>
+</g>
+
+<!-- 标题和副标题，增大字号 -->
+<text x="960" y="400" font-family="Arial" font-size="150" fill="white" text-anchor="middle" font-weight="bold">
+从0开始写一个区块链
+</text>
+
+<!-- 连接线 -->
+<line x1="510" y1="470" x2="1410" y2="470" stroke="white" stroke-width="2"/>
+
+<text x="960" y="550" font-family="Arial" font-size="90" fill="white" text-anchor="middle">
+Write a blockchain from scratch
+</text>
+</svg>
