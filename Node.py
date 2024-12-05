@@ -5,9 +5,11 @@ from BlockChain import BlockChain, block_chain_from_json
 from Block import Block, block_from_json
 from MerkleTree import MerkleTree, merkle_tree_from_json
 import json
+from Wallet import Wallet
 
 class Node:
     def __init__(self, ip):
+        self.wallet = Wallet()
         self.address = ip
         self.peers = {"127.0.0.1"}  # 种子节点
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
