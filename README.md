@@ -24,5 +24,6 @@
 3. [P2P网络](./Tutor/3_p2p_network.md)
 4. [工作量证明](./Tutor/4_pow.md)
 5. [Who am I?](./Tutor/5_whoami.md)
+6. [电子货币](./Tutor/6_Electronic_Cash.md)
 
 to be continue
