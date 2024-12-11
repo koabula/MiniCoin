@@ -6,7 +6,7 @@ from MerkleTree import MerkleTree, merkle_tree_from_json
 
 class Block:
     def __init__(
-        self, index, merkle_tree: MerkleTree, previous_hash, nonce, timestamp=None
+        self, index, merkle_tree: MerkleTree, previous_hash, nonce, timestamp=None, miner_address=None
     ):
         self.index = index
         self.timestamp = time.time() if timestamp is None else timestamp  # 当前时间戳
@@ -14,6 +14,7 @@ class Block:
         self.merkle_root = merkle_tree.get_root_hash()
         self.previous_hash = previous_hash
         self.nonce = nonce
+        self.miner_address = miner_address  # 添加矿工节点的IP地址
         self.hash = self.calculate_hash()
 
     def calculate_hash(self):
@@ -37,7 +38,8 @@ class Block:
             'merkle_tree': self.merkle_tree.to_json(),
             'previous_hash': self.previous_hash,
             'nonce': self.nonce,
-            'hash': self.hash
+            'hash': self.hash,
+            'miner_address': self.miner_address
         }
         return json.dumps(block_dict, ensure_ascii=False)
 
@@ -201,6 +203,7 @@ def block_from_json(block_json):
     # 创建并返回Block对象
     block = Block(index, merkle_tree, previous_hash, nonce, timestamp)
     block.hash = block_data['hash']  # 直接使用已保存的哈希值
+    block.miner_address = block_data['miner_address']
     return block
 
 

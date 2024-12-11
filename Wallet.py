@@ -2,6 +2,7 @@ import random
 import ecdsa
 import hashlib
 import base58
+from Transaction import Transaction, UTXO
 
 # 生成公钥
 def generate_public_key(private_key):
@@ -45,9 +46,10 @@ def verify_signature(public_key, message, signature):
 
 class Wallet:
     def __init__(self):
-        self.private_key = random.randbytes(32) # 256位私钥
+        self.private_key = random.randbytes(32)  # 256位私钥
         self.public_key = generate_public_key(self.private_key)
         self.address = generate_btc_address(self.public_key)
+        self.utxo_pool = []  # 钱包中的UTXO集合
 
     def get_address(self):
         return self.address
@@ -60,11 +62,94 @@ class Wallet:
         signature = sk.sign(message_hash)
         return signature
 
+    def create_transaction(self, recipient_address, amount):
+        # 1. 选择足够的UTXO
+        selected_utxos = []
+        total_amount = 0
+        for utxo in self.utxo_pool:
+            selected_utxos.append(utxo)
+            total_amount += utxo.amount
+            if total_amount >= amount:
+                break
+
+        if total_amount < amount:
+            raise ValueError("Don't have enough coins")
+
+        # 2. 创建交易
+        tx = Transaction()
+        for utxo in selected_utxos:
+            tx.add_input(utxo)
+
+        # 3. 创建交易输出
+        tx.add_output(amount, recipient_address)
+
+        # 4. 找零
+        change = total_amount - amount
+        if change > 0:
+            tx.add_output(change, self.address)
+
+        # 5. 计算交易哈希
+        tx.calculate_hash()
+
+        # 6. 签名交易
+        tx.sign(self.private_key)
+
+        # 7. 更新UTXO池
+        # self.utxo_pool = [utxo for utxo in self.utxo_pool if utxo not in selected_utxos]
+
+        return tx
+
+    def receive_transaction(self, transaction: Transaction):
+        # 1. 验证交易签名
+        if not transaction.verify_signature():
+            raise ValueError("Invalid transaction signature")
+
+        # 2. 更新UTXO池
+        for output in transaction.outputs:
+            if output.recipient_address == self.address:
+                new_utxo = UTXO(transaction.tx_hash, transaction.outputs.index(output), output.amount, output.recipient_address)
+                self.utxo_pool.append(new_utxo)
+
+    def add_utxo(self, utxo):
+        self.utxo_pool.append(utxo)
+
+    def remove_utxo(self, utxo):
+        self.utxo_pool.remove(utxo)
+
+    def __repr__(self):
+        return f"Wallet(address={self.address}, utxo_pool={self.utxo_pool})"
+
 if __name__ == "__main__":
-    wallet = Wallet()
-    print("private_key: ", wallet.private_key.hex())
-    print("public_key: ", wallet.public_key.hex())
-    print("address: ", wallet.get_address())
-    signature = wallet.sign_message("Hello, world!")
-    print("signature: ", signature.hex())
-    print("verify_signature: ", verify_signature(wallet.public_key, "Hello, world!", signature))
+    # 创建发送方钱包
+    sender_wallet = Wallet()
+    recipient_wallet = Wallet()
+    recipient_private_key, recipient_public_key = recipient_wallet.private_key, recipient_wallet.public_key
+    recipient_address = recipient_wallet.address
+
+    # 添加UTXO到发送方钱包
+    utxo = UTXO(tx_hash="previous_tx_hash", output_index=0, amount=20, recipient_address=sender_wallet.address)
+    sender_wallet.add_utxo(utxo)
+    utxo = UTXO(tx_hash="previous_tx_hash", output_index=0, amount=20, recipient_address=sender_wallet.address)
+    sender_wallet.add_utxo(utxo)
+
+    # 验证接收方钱包的UTXO池
+    print(f"Recipient Wallet UTXO Pool: {recipient_wallet.utxo_pool}")
+    print(f"Sender Wallet UTXO Pool: {sender_wallet.utxo_pool}")
+
+    # 创建交易
+    tx = sender_wallet.create_transaction(recipient_address, 30)
+
+    # 创建接收方钱包
+    recipient_wallet = Wallet()
+    recipient_wallet.address = recipient_address  # 设置接收方地址
+
+    # 接收交易
+    recipient_wallet.receive_transaction(tx)
+    sender_wallet.receive_transaction(tx)
+
+    print("转账后")
+    print("--------------------------------")
+
+    # 验证接收方钱包的UTXO池
+    print(f"Recipient Wallet UTXO Pool: {recipient_wallet.utxo_pool}")
+    print(f"Sender Wallet UTXO Pool: {sender_wallet.utxo_pool}")
